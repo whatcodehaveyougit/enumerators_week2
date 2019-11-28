@@ -62,23 +62,23 @@ class TestStarSystem < Minitest::Test
     assert_equal(expected_names, result)
   end
   
-  # def test_number_of_planets_less_than_1billion_km_from_sun
-  #   result = @solar_system.get_number_of_planets_closer_than(1000)
-  #   assert_equal(5, result)
-  # end
+  def test_number_of_planets_less_than_1billion_km_from_sun
+    result = @solar_system.get_number_of_planets_closer_than(1000)
+    assert_equal(5, result)
+  end
 
   # OPTIONAL - MAY REQUIRE LOOKING UP THE DOCS
 
-  # def test_total_number_of_moons
-  #   result = @solar_system.get_total_number_of_moons
-  #   assert_equal(176, result)
-  # end
-  #
-  # def test_planet_names_sorted_by_increasing_distance_from_sun
-  #   expected_names = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
-  #   assert_equal(expected_names, @solar_system.get_planet_names_sorted_by_increasing_distance_from_sun)
-  # end
-  #
+  def test_total_number_of_moons
+    result = @solar_system.get_total_number_of_moons
+    assert_equal(176, result)
+  end
+  
+  def test_planet_names_sorted_by_increasing_distance_from_sun
+    expected_names = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
+    assert_equal(expected_names, @solar_system.get_planet_names_sorted_by_increasing_distance_from_sun)
+  end
+  
   # def test_planet_names_sorted_by_size_decreasing
   #   expected_names = ["Jupiter", "Saturn", "Uranus", "Neptune", "Earth", "Venus", "Mars", "Mercury", "Pluto"]
   #   assert_equal(expected_names, @solar_system.get_planet_names_sorted_by_size_decreasing)
